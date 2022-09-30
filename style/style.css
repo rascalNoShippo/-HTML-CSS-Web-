@@ -5,6 +5,7 @@
 }
 
 header{
+	position: fixed;
 	width: 100%;
 	height: 70px;
 	background-color: #ec715f;
@@ -290,8 +291,8 @@ footer>div{
 }
 
 @media screen and (max-width: 767px){
+		
 	header{
-		position: fixed;
 		height: 50px;
 	}
 
@@ -303,6 +304,7 @@ footer>div{
 		border: 2px solid white;
 		border-radius: 2px;
 		margin: auto 10px;
+		transition: all .2s;
 	}
 
 	.hbg_menu>div{
@@ -322,34 +324,55 @@ footer>div{
 		margin: auto;
 	}
 
+	nav .hbg_menu:hover{
+		box-shadow: 0 0 3px black;
+		cursor: pointer;
+	}
+
 	nav .menu{
-		display: none;
+		display: block;
 		background-color: #444;
 		padding: 10px;
 		position: absolute;
-		top: 50px;
+		top: 55px;
 		right: 0;
 		margin: 0 10px;
-		border: 2px double whitesmoke;
+		border: 2px solid whitesmoke;
+		border-radius: 2px;
+		box-shadow: 0 0 3px black;
+		transition: all .4s;
+		opacity: 0;
+		visibility: hidden;
 	}
+
+	.menu.active{
+		opacity: 1;
+		visibility: visible;
+	}
+
+
 	nav .menu>div{
 		margin: 10px;
 	}
 
-	.active span:nth-child(1) {
-		-webkit-transform: translateY(20px) rotate(-45deg);
-		transform: translateY(20px) rotate(-45deg);
-		position: relative;
-		top: -11px;
+	.hbg_menu span{
+		transition: all .4s
 	}
-	.active span:nth-child(2) {
+
+	.hbg_menu.active span:nth-child(1) {
+		-webkit-transform: translateY(9px) rotate(-45deg);
+		transform: translateY(9px) rotate(-45deg);
+		position: relative;
+	}
+
+	.hbg_menu.active span:nth-child(2) {
 		opacity: 0;
 	}
-	.active span:nth-child(3) {
-		-webkit-transform: translateY(-20px) rotate(45deg);
-		transform: translateY(-20px) rotate(45deg);
+
+	.hbg_menu.active span:nth-child(3) {
+		-webkit-transform: translateY(-8px) rotate(45deg);
+		transform: translateY(-8px) rotate(45deg);
 		position: relative;
-		top: 11px;
 	}
 
 	.main-visual{
