@@ -8,7 +8,7 @@ $(function() {
 });
 
 $(function(){ //smooth scrolling
-    $('a[href^="#"]').click(function(){
+    $('a[href^="#"]').on("click", function(){
       let adjust = -50;
       let speed = 400;
       let href= $(this).attr("href");

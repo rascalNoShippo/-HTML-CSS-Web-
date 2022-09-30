@@ -218,9 +218,9 @@ article{
 	margin: auto;
 }
 
-/*#profile article{
-	display: flex;
-}*/
+#profile article>div{
+	margin: auto;
+}
 
 .profile_detail{
 	width: 512px;
