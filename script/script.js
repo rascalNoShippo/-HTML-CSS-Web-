@@ -28,7 +28,7 @@ let appear = false;
 
 $(function(){
 	if($("main").scrollTop() > 100){
-		$("#top_btn").css({"bottom":"10px"});
+		$("#top_btn").css({"right":"20px"});
 		appear = true;
 	}
 });
@@ -37,10 +37,10 @@ $(function(){
 	$("main").scroll(function(){
 		if($("main").scrollTop() > 100){
 			appear = true;
-			$("#top_btn").css({"bottom":"10px"});
+			$("#top_btn").css({"right":"20px"});
 		}else{
 			appear = false;
-			$("#top_btn").css({"bottom":"-60px"});
+			$("#top_btn").css({"right":"-60px"});
 		}
 	});
 });
