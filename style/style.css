@@ -317,6 +317,7 @@ footer>div{
 .contact_detail{
 	width: 400px;
 	display: inline-block;
+	margin: 0 auto;
 }
 
 .contact_detail .fa-brands{

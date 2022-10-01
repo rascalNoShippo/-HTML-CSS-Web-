@@ -5,6 +5,13 @@ $(function() {
 	});
 });
 
+$(function() {
+	$(".logo, main").on("click", function(){
+  	$(".hbg_menu, .menu").removeClass("active");
+	});
+});
+
+
 $(function(){ //smooth scrolling
 	$('a[href^="#"]').on("click", function(){
 		let adjust = 0;
